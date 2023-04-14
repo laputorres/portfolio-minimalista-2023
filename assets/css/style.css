@@ -18,9 +18,11 @@ a {
   top: 0;
   left: 0;
   background: linear-gradient(to right, #000000, #000000, #000000);
+  animation: hidden 3s ease !important;
+  -webkit-animation: hidden 4s ease !important;
   height: 100%;
   width: 100%;
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 1.5rem;
   align-items: center;
@@ -62,6 +64,19 @@ a {
   }
 }
 
+.hidden {
+  display: none;
+}
+
+@keyframes hidden {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
 header {
   position: fixed;
   top: 0;
@@ -141,6 +156,8 @@ header {
   font-weight: 600;
   background: none !important;
   color: rgba(0, 0, 0, 0.5882352941) !important;
+  width: 100%;
+  text-align: center;
   font-family: "Monoton", cursive;
 }
 .banner h2 {
@@ -152,6 +169,7 @@ header {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
+  margin-bottom: 10rem;
   padding: 0.5% 2%;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -444,7 +462,7 @@ input[type=radio] {
   flex-wrap: wrap;
 }
 .contact .contact__title {
-  width: 100vw;
+  width: 100%;
   text-align: center;
 }
 .contact .contact__title h1 {
@@ -726,5 +744,11 @@ input[type=radio] {
   }
   .contact .contact__title h1 {
     font-size: 3rem;
+  }
+  .contact .form {
+    width: 100%;
+  }
+  .contact .social-icons {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

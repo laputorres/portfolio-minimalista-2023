@@ -25,13 +25,13 @@ window.addEventListener("scroll", () => {
   lastScroll = currentScroll;
 });
 
-/* Botons social media animation */
-function hoverTrue(event) {
-  //add class
-  event.target.setAttribute("class", "wave");
-}
+//LOADER
 
-
+window.addEventListener("load", function () {
+  document.getElementById("loader").classList.add("hidden");
+  
+  
+});
 
 
 
