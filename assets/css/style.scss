@@ -248,7 +248,7 @@ header {
       width: 195px;
       margin: 3rem;
       height: 285px;
-      background: #313131;
+      background: #000;
       border-radius: 20px;
       display: flex;
       flex-direction: column;
@@ -337,6 +337,7 @@ header {
   align-items: center;
   padding: 0 50px;
   background: $color-bg-white;
+  overflow: hidden;
 
   .title {
     text-align: center;
